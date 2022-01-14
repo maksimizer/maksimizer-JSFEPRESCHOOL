@@ -3,6 +3,11 @@
     src: url(assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+@font-face {
+    font-family: 'Merriweather';
+    src: url(assets/fonts/Merriweather/Merriweather-Bold.ttf);
+}
+
 html {
     scroll-behavior: smooth;
 }
