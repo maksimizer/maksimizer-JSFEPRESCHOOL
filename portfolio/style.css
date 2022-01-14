@@ -18,6 +18,8 @@ html {
 
 body {
     font-family: 'Inter';
+    margin: 0;
+    padding: 0;
 }
 
 .container {
@@ -25,3 +27,11 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
+.header-container {
+    background: url(assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height:  90px;
+    }
+
