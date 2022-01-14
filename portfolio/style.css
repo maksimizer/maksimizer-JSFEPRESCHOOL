@@ -3,6 +3,14 @@
     src: url(assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Inter';
 }
