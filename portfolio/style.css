@@ -38,6 +38,7 @@ body {
     line-height: 80px;
     color: #BDAE82;
     text-align: center;
+    background-color: #000000;
 }
 
 .container {
@@ -114,7 +115,7 @@ body {
     background: url(assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center -90px;
-    height: 910px;
+    height: 820px;
     width: 1440px;
     margin: 0 auto;
 }
@@ -174,4 +175,9 @@ body {
     line-height: 40px;
     color: #FFFFFF;
     text-align: center; 
+}
+
+#skills {
+    margin: 0;
+    padding-top: 100px;
 }
