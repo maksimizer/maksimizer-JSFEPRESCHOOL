@@ -20,17 +20,15 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
 }
 
-.section-title-hero {
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 120px;
-    color: #FFFFFF;
-    margin: 0;
-}
+
 
 .section-title{
     font-family: Merriweather;
@@ -121,4 +119,59 @@ body {
     margin: 0 auto;
 }
 
+.section-title-hero {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+    color: #FFFFFF;
+    margin: 0;
+}
 
+.hero-section {
+    width: 500px;
+    margin: 0;
+    padding-left: 80px;
+    padding-right: 0;
+    padding-top: 160px;
+
+}
+
+.hero-content {
+    margin: 0;
+    width: 470px;
+}
+
+.button-gold {
+    width: 220px;
+    height: 55px;
+    border: 0;
+    margin-top: 25px;
+    background-color: #BDAE82;
+    cursor: pointer;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: #000000;
+    text-align: center;
+    transition: 0.5s;    
+}
+
+.button-gold:hover {
+    width: 220px;
+    height: 55px;
+    border: 0;
+    margin-top: 25px;
+    background-color: #BDAE82;
+    cursor: pointer;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center; 
+}
