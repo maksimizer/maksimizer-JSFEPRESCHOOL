@@ -29,6 +29,7 @@ body {
     font-size: 60px;
     line-height: 120px;
     color: #FFFFFF;
+    margin: 0;
 }
 
 .section-title{
@@ -42,7 +43,7 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -92,6 +93,7 @@ body {
 .lang-switch-item-en {
     padding-left: 31px;
     padding-right: 9px;
+    color: #BDAE82;
 }
 
 .lang-switch-item-ru {
@@ -109,3 +111,14 @@ body {
 .nav-link:hover {
     color: #BDAE82;
 }
+
+.hero-container {
+    background: url(assets/img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    height: 910px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+
