@@ -10,6 +10,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: black;
 }
 
 * {
@@ -17,9 +18,27 @@ html {
 }
 
 body {
-    font-family: 'Inter';
     margin: 0;
     padding: 0;
+}
+
+.section-title-hero {
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 120px;
+    color: #FFFFFF;
+}
+
+.section-title{
+    font-family: Merriweather;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 80px;
+    color: #BDAE82;
+    text-align: center;
 }
 
 .container {
