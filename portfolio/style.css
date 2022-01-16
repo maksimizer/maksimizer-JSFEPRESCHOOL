@@ -349,3 +349,61 @@ h3 {
 }
 
 
+.contacts-container {
+    background: url(assets/img/contactsBg.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 700px;
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#contacts {
+    background-color: transparent;
+    padding-top: 60px;
+    padding-right: 224px;
+}
+
+.contacts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 20px;
+
+}
+
+textarea {
+    resize: none;
+}
+
+::placeholder {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    color: #bdae82;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 18px;
+    
+  }
+
+  input {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #BDAE82;
+    width: 450px;
+    height: 50px;
+    
+  }
+
+  textarea {
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #BDAE82;
+    width: 450px;
+    height: 100px;
+  }
+
+  .button-contacts {
+      margin-right: 230px;
+      margin-top: 10px;
+  }
