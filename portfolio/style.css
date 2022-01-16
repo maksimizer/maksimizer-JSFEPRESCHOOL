@@ -181,3 +181,50 @@ body {
     margin: 0;
     padding-top: 100px;
 }
+
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 40px 0 40px;
+    margin: 0 auto;
+
+}
+
+
+.skills-item {
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0 auto;
+}
+
+.skills-content {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
