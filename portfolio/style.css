@@ -102,7 +102,9 @@ body {
     padding-left: 8px;
 }
 
-.nav-item {padding-left: 30px;}
+.nav-item {
+    padding-left: 30px;
+}
 
 .nav-link {
     text-decoration: none;
@@ -386,24 +388,58 @@ textarea {
     line-height: 40px;
     padding-left: 18px;
     
-  }
+}
 
-  input {
+input {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     width: 450px;
     height: 50px;
     
-  }
+}
 
-  textarea {
+textarea {
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid #BDAE82;
     width: 450px;
     height: 100px;
-  }
+}
 
-  .button-contacts {
+.button-contacts {
       margin-right: 230px;
       margin-top: 10px;
-  }
+}
+
+.footer-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 150px;
+      align-items: center;
+      line-height: 50px;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s;
+    color: #FFFFFF;
+}
+
+a:hover, a:active {
+    color: #BDAE82;
+}
+
+.development-year {
+    display: flex;
+    column-gap: 20px;
+}
+
+.social-networks {
+    display: flex;
+    column-gap: 20px;
+    padding-top: 15px;
+}
+
+.course-link {
+    padding-left: 17px;
+}
