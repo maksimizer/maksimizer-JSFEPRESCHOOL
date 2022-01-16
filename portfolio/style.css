@@ -39,6 +39,7 @@ body {
     color: #BDAE82;
     text-align: center;
     background-color: #000000;
+    margin: 0;
 }
 
 .container {
@@ -228,3 +229,39 @@ figcaption {
     padding-top: 20px;
 }
 
+#portfolio {
+    padding-top: 110px;
+}
+
+.button-black {
+    width: 220px;
+    height: 55px;
+    border: 2px solid #BDAE82;
+    background-color: #000000;
+    cursor: pointer;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 40px;
+    color: #BDAE82;
+    text-align: center;
+    transition: 0.5s;
+    margin-left: 2.5px;
+    margin-right: 2.5px;   
+}
+
+.button-black:hover {
+    color: #FFFFFF;
+}
+
+.portfolio-buttons {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 0;
+    margin: 0;
+        
+    
+}
