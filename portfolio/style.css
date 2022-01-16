@@ -171,9 +171,16 @@ body {
        color: #FFFFFF;
 }
 
+.title-wrapper {
+    background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+    width:  50%;
+    margin: 0 auto;
+}
+
 #skills {
-    margin: 0;
+    margin: 0 auto;
     padding-top: 99px;
+    width: 152px;
 }
 
 .skills-list {
@@ -224,6 +231,8 @@ figcaption {
 
 #portfolio {
     padding-top: 110px;
+    width: 221px;
+    margin: 0 auto;
 }
 
 .button-black {
@@ -273,6 +282,8 @@ figcaption {
 
 #video {
     padding-top: 88px;
+    width: 156px;
+    margin: 0 auto;
 }
 
 .video-player {
@@ -297,6 +308,8 @@ figcaption {
 
 #price {
     padding-top: 99px;
+    width: 142px;
+    margin: 0 auto;
 }
 
 .prices {
