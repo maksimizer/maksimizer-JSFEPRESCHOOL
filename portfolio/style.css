@@ -75,6 +75,7 @@ body {
     list-style: none;
     margin:0;
     height: 90px;
+    
 }
 
 .nav-item, .lang-switch-item-en, span, .lang-switch-item-ru {
@@ -88,6 +89,7 @@ body {
 
 .lang-switch-item-ru, .lang-switch-item-en {
     cursor: pointer;
+
 }
 
 .lang-switch-item-en {
@@ -143,6 +145,7 @@ body {
 .hero-content {
     margin: 0;
     width: 470px;
+    padding-top: 10px;
 }
 
 .button-gold {
@@ -180,13 +183,13 @@ body {
 
 #skills {
     margin: 0;
-    padding-top: 100px;
+    padding-top: 99px;
 }
 
 .skills-list {
     display: flex;
     justify-content: space-between;
-    padding: 60px 40px 0 40px;
+    padding: 60px 20px 0px 20px;
     margin: 0 auto;
 
 }
@@ -214,7 +217,7 @@ figcaption {
     font-size: 20px;
     line-height: 40px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 40px;
     margin: 0 auto;
 }
 
@@ -268,8 +271,40 @@ figcaption {
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
-    gap: 25px;
+    justify-content: space-between;
+    row-gap: 10px;
+    
 
 }
 
+.porfolio-photo {
+    height: 560px;
+}
 
+#video {
+    padding-top: 86px;
+}
+
+.video-player {
+    padding-top: 61px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-button {
+    position: absolute;
+    background: none;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.play-button:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+#price {
+    padding-top: 99px;
+}
