@@ -408,6 +408,7 @@ input {
     border: 2px solid #BDAE82;
     width: 450px;
     height: 50px;
+    color: #FFFFFF;
     
 }
 
@@ -416,6 +417,7 @@ textarea {
     border: 2px solid #BDAE82;
     width: 450px;
     height: 100px;
+    color: #FFFFFF;
 }
 
 .button-contacts {
@@ -452,6 +454,16 @@ a:hover, a:active {
     column-gap: 20px;
     padding-top: 15px;
 }
+
+
+.soc-net-span {
+    transition: 0.5s;
+}
+
+.soc-net-span:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 
 .course-link {
     padding-left: 17px;
