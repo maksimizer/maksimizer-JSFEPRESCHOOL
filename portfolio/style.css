@@ -49,6 +49,8 @@ body {
 }
 
 .header-container {
+    display: flex;
+    justify-content: space-between;
     background: url(assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
@@ -73,11 +75,17 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin:0;
+    margin-top: 0;
+    margin-left: 832px;
     height: 90px;
+    padding: 0;
     
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+}
 .nav-item, .lang-switch-item-en, span, .lang-switch-item-ru {
     font-family: Inter;
     font-style: normal;
@@ -348,6 +356,10 @@ h3 {
     line-height: 36px;
 }
 
+.cost-span {
+    font-size: 18px;
+}
+
 .cost {
     font-family: Merriweather;
     font-style: normal;
@@ -469,6 +481,9 @@ a:hover, a:active {
     padding-left: 17px;
 }
 
+
+
+
 @media (max-width: 768px) {
  .container {
     max-width: 768px;
@@ -489,8 +504,12 @@ a:hover, a:active {
      
  }
 
- .nav-item {
+ .nav {
      display: none;
+ }
+
+ .lang-switch {
+     margin-left: 458px;
  }
 
  .lang-switch-item-ru {
@@ -571,17 +590,18 @@ figcaption {
 .portfolio-buttons {
     flex-wrap: wrap;
     padding: 50px 30px 0 30px;
+    row-gap: 5px;
 }
 
 .porfolio-container {
     justify-content: space-around;
-    padding-top: 65px;
+    padding-top: 60px;
     row-gap: 12px;
 }
 
 #video {
     width: 131px;
-    padding-top: 66px;
+    padding-top: 67px;
 }
 
 .video-player {
