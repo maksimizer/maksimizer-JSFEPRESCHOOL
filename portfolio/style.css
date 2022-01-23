@@ -601,3 +601,19 @@ figcaption {
  height: 60px;
 }
 
+#price {
+    width: 122px;
+    padding-top: 130px;
+}
+
+.prices {
+    flex-wrap: wrap;
+    padding-top: 50px;
+    row-gap: 50px;
+}
+
+.price-item {
+    width: 420px;
+    height: 505px;    
+}
+}
