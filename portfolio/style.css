@@ -479,7 +479,7 @@ a:hover, a:active {
  }
 
  .section {
-     width: 768px;
+    max-width: 768px;
  }
 
  .header-container {
@@ -526,6 +526,36 @@ a:hover, a:active {
      margin-top: 59px;
  }
 
+ .title-wrapper {
+    
+ }
 
+  #skills {
+    font-size: 32px;
+    line-height: 40px; 
+    width: 131px;
+    padding-bottom: 19px;
+    padding-top: 102px;
+}
 
+.skills-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 45px;
+    row-gap: 76px;
+
+}
+
+figcaption {
+    font-size: 20px;
+    line-height: 40px;
+    width: 280px;
+    padding-top: 17px;
+}
+
+.skills-content {
+    width: 280px;
+    font-size: 18px;
+    line-height: 22px;
+}
 }
