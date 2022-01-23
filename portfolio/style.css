@@ -43,7 +43,7 @@ body {
 }
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -467,4 +467,65 @@ a:hover, a:active {
 
 .course-link {
     padding-left: 17px;
+}
+
+@media (max-width: 768px) {
+ .container {
+    max-width: 768px;
+ }
+
+ .header-container {
+     padding: 0 60px;
+ }
+
+ .section {
+     width: 768px;
+ }
+
+ .header-container {
+     background: url(assets/img/bg768.jpg);
+     
+ }
+
+ .nav-item {
+     display: none;
+ }
+
+ .lang-switch-item-ru {
+    margin-right: 75px ;
+    padding-left: 20px;
+ }
+
+ .hero-container {
+    background: url(assets/img/bg768.jpg);
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    height: 499px;
+    width: 768px;
+ }
+   
+.hero-section {
+    padding-left: 60px;
+    padding-top: 78px;
+}
+
+ .section-title-hero {
+    font-size: 32px;
+    line-height: 64px;
+    font-weight: normal;
+    
+ }
+
+ .hero-content {
+     width: 390px;
+     line-height: 24px;
+     padding-top: 20px;
+ }
+
+ .button-gold {
+     margin-top: 59px;
+ }
+
+
+
 }
