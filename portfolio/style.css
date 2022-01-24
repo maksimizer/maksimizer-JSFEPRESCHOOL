@@ -26,8 +26,9 @@ body {
     font-size: 20px;
     line-height: 40px;
     color: #FFFFFF;
-}
+    overflow-x: hidden;
 
+}
 
 
 .section-title{
@@ -46,13 +47,17 @@ body {
     width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: hidden;
 }
 
 .header-container {
+    display: flex;
+    justify-content: space-between;
     background: url(assets/img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center 0;
     height:  90px;
+    width: 1440px;
     }
 
 .camera-icon {
@@ -73,11 +78,17 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    margin:0;
+    margin-top: 0;
+    margin-left: 832px;
     height: 90px;
+    padding: 0;
     
 }
 
+.lang-switch {
+    display: flex;
+    align-items: center;
+}
 .nav-item, .lang-switch-item-en, span, .lang-switch-item-ru {
     font-family: Inter;
     font-style: normal;
@@ -115,6 +126,8 @@ body {
 .nav-link:hover {
     color: #BDAE82;
 }
+
+
 
 .hero-container {
     background: url(assets/img/bg.jpg);
@@ -348,6 +361,10 @@ h3 {
     line-height: 36px;
 }
 
+.cost-span {
+    font-size: 18px;
+}
+
 .cost {
     font-family: Merriweather;
     font-style: normal;
@@ -468,3 +485,201 @@ a:hover, a:active {
 .course-link {
     padding-left: 17px;
 }
+
+@media (max-width: 768px) {
+ .container {
+    max-width: 768px;
+    overflow: hidden;
+ }
+
+ .header-container {
+     padding: 0 60px;
+     width: calc(100% -40px);
+ }
+
+ .section {
+    max-width: 768px;
+ }
+
+ .header-container {
+     background: url(assets/img/bg768.jpg);
+     
+ }
+
+ .nav {
+     display: none;
+ }
+
+ .lang-switch {
+     margin-left: 458px;
+ }
+
+ .lang-switch-item-ru {
+    margin-right: 75px ;
+    padding-left: 20px;
+ }
+
+ .hero-container {
+    background: url(assets/img/bg768.jpg);
+    background-repeat: no-repeat;
+    background-position: center -90px;
+    height: 499px;
+    max-width: 768px;
+ }
+   
+.hero-section {
+    padding-left: 60px;
+    padding-top: 78px;
+}
+
+ .section-title-hero {
+    font-size: 32px;
+    line-height: 64px;
+    font-weight: normal;
+    
+ }
+
+ .hero-content {
+     width: 390px;
+     line-height: 24px;
+     padding-top: 20px;
+ }
+
+ .button-gold {
+     margin-top: 59px;
+ }
+
+ 
+  #skills {
+    font-size: 32px;
+    line-height: 40px; 
+    width: 131px;
+    padding-bottom: 19px;
+    padding-top: 102px;
+}
+
+.skills-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 45px;
+    row-gap: 76px;
+
+}
+
+figcaption {
+    font-size: 20px;
+    line-height: 40px;
+    width: 280px;
+    padding-top: 17px;
+}
+
+.skills-content {
+    width: 280px;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.section-title {
+    font-size: 32px;
+    line-height: 80px;
+}
+
+#portfolio {
+    padding-top: 162px;
+    width: 185px;
+}
+
+.portfolio-buttons {
+    flex-wrap: wrap;
+    padding: 50px 30px 0 30px;
+    row-gap: 5px;
+}
+
+.porfolio-container {
+    justify-content: space-around;
+    padding-top: 60px;
+    row-gap: 12px;
+}
+
+#video {
+    width: 131px;
+    padding-top: 67px;
+}
+
+.video-player {
+    max-width: 768px;
+    height: 418px;
+    padding-top: 100px;
+}
+.videoplayer-pic {
+   width: 768px; 
+   height: 418px;
+      
+}
+
+.play-button, .play-button:hover, .play-button-pic {
+ width: 60px;
+ height: 60px;
+}
+
+#price {
+    width: 122px;
+    padding-top: 130px;
+}
+
+.prices {
+    flex-wrap: wrap;
+    padding-top: 50px;
+    row-gap: 50px;
+}
+
+.price-item {
+    width: 420px;
+    height: 505px;    
+}
+.contacts-container {
+    width: 768px;
+    background: url(assets/img/contactsbg786.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 80px;
+    height: 600px;
+}
+
+.contacts-section {
+    align-items: center;
+}
+
+#contacts {
+    font-size: 32px;
+    line-height: 64px;
+    padding-top: 60px;
+    padding-right: 0;
+}
+
+.button-contacts {
+    margin-right: 0;
+    margin-top: 10px;
+}
+
+.footer-container {
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: start;
+    line-height: 25px;
+    padding-top: 15px;
+}
+
+.footer-container span {
+    height: 25px;
+}
+
+
+.course-link {
+    padding-top: 15px;
+    padding-left: 0;
+}
+
+
+}   
+   
