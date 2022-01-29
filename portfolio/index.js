@@ -1,1 +1,20 @@
-console.log('Вёрстка соответствует макету. Ширина экрана 768px +48 \nНи на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. Весь контент страницы при этом сохраняется: не обрезается и не удаляется +15 \nНа ширине экрана 768рх и меньше реализовано адаптивное меню +0 (к сожалению, не успеваю, мешает работа, не хотят увольнять)\nСамооценка 58/75');
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+
+burger.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  burger.classList.toggle('open');
+  nav.classList.toggle('nav-open');
+}
+
+
+nav.addEventListener('click', closeMenu);
+function closeMenu (event) {
+    if (event.target.classList.contains('nav-link')) {
+        burger.classList.toggle('open');
+        nav.classList.toggle('nav-open');
+    }
+}
+
+
