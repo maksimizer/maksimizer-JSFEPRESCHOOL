@@ -73,13 +73,16 @@ body {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
+.nav {
+    margin-left: auto;
+}
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     list-style: none;
     margin-top: 0;
-    margin-left: 832px;
     height: 90px;
     padding: 0;
     
@@ -534,19 +537,58 @@ a:hover, a:active {
 
  .header-container {
      background: url(assets/img/bg768.jpg);
+     padding: 0;
      
  }
 
- .nav {
-     display: none;
+ .camera-icon {
+    margin-left: 60px;
  }
 
+
+
+ .nav{
+     position: fixed;
+     top: 0;
+     right: -620px;
+     width: 620px;
+     height: 100%;
+     background-color: #000000;
+     transition: 0.5s;
+     z-index: 2;
+     margin-left: auto;
+}
+
+.nav-open {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 620px;
+    height: 100%;
+    background-color: #000000;
+    transition: 0.5s;
+    z-index: 2;
+    margin-left: auto;
+}
+
+.nav-list {
+    flex-direction: column;
+    padding-top: 125px;
+    padding-left: 112px;
+    justify-content: left;
+    align-items: flex-start;
+
+}
+
  .burger {
-     display: flex;     
+     display: flex;
+     position: fixed;  
+     margin-right: 60px;  
+     right: 0px; 
  }
 
  .lang-switch {
-     margin-left: 458px;
+     margin-left: 515px;
  }
 
  .lang-switch-item-ru {
