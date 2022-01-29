@@ -157,7 +157,7 @@ body {
 }
 
 .burger.open .burger-line-3 {
-    transform: rotate(45deg) translate(-5px, -7px);
+    transform: rotate(45deg) translate(-6px, -6px);
 }
 
 .hero-container {
@@ -541,13 +541,16 @@ a:hover, a:active {
      display: none;
  }
 
+ .burger {
+     display: flex;     
+ }
+
  .lang-switch {
      margin-left: 458px;
  }
 
  .lang-switch-item-ru {
-    margin-right: 75px ;
-    padding-left: 20px;
+    padding-left: 15px;
  }
 
  .hero-container {
