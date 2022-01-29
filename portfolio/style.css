@@ -318,7 +318,7 @@ figcaption {
     flex-wrap: wrap;
     padding-top: 60px;
     justify-content: space-between;
-    row-gap: 10px;
+    row-gap: 20px;
     
 
 }

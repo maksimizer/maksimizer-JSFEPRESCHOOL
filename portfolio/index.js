@@ -24,8 +24,10 @@ function closeMenu (event) {
 const portfolioButtons = document.querySelector('.portfolio-buttons')
 const portfolioImages = document.querySelectorAll('.portfolio-photo')
 
+portfolioButtons.addEventListener('click', changeImage)
+
 function changeImage(event) {
-    if(event.target.classList.contains('button-black')) {
+    if (event.target.classList.contains('button-black')) {
         const dataSet = event.target.dataset.season
         portfolioImages.forEach((img, index) => {
             img.src = `./assets/img/${dataSet}/${index+1}.jpg`
@@ -33,9 +35,8 @@ function changeImage(event) {
     }
 }
 
-portfolioButtons.addEventListener('click', (event) => {
-    changeImage(event)
-})
-
 
 //кэширование картинок
+
+
+
