@@ -127,7 +127,38 @@ body {
     color: #BDAE82;
 }
 
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    margin-top: 28px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 2;
+}
 
+.burger-line {
+    width: 80%;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 3px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.burger.open .burger-line-1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.burger.open .burger-line-2 {
+    opacity: 0;
+}
+
+.burger.open .burger-line-3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
 
 .hero-container {
     background: url(assets/img/bg.jpg);
