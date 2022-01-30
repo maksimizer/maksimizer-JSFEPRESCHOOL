@@ -33,7 +33,7 @@ function changeImage(event) {
             img.src = `./assets/img/${dataSet}/${index+1}.jpg`
         })
     }
-}
+};
 
 
 //кэширование картинок
@@ -47,4 +47,19 @@ seasons.forEach(elem => {
         }
     }
   preloadImages();
-})
+});
+
+//подсветка черной активной кнопки
+const buttonsBlack = document.querySelectorAll('.button-black');
+
+buttonsBlack.forEach(elem => {
+    elem.addEventListener('click', changeClassActive)
+});
+
+function changeClassActive(event) {
+    buttonsBlack.forEach(el => {
+        el.classList.remove('button-black-active')
+    })
+    event.target.classList.add('button-black-active');
+};
+

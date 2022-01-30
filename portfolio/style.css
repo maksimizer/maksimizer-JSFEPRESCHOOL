@@ -304,6 +304,11 @@ figcaption {
     color: #FFFFFF;
 }
 
+.button-black-active {
+    color: #000000;
+    background-color: #bdae82;
+}
+
 .portfolio-buttons {
     display: flex;
     list-style: none;
