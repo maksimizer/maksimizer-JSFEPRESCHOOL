@@ -38,5 +38,13 @@ function changeImage(event) {
 
 //кэширование картинок
 
-
-
+const seasons = ['winter', 'spring', 'summer', 'autumn'];
+seasons.forEach(elem => {
+    function preloadImages() {
+        for(let i = 1; i <= 6; i++) {
+            const img = new Image();
+            img.src = `./assets/img/${elem}/${i}.jpg`;
+        }
+    }
+  preloadImages();
+})
