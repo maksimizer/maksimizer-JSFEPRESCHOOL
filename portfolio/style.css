@@ -134,6 +134,32 @@ body {
     color: #BDAE82;
 }
 
+.dark-icon {
+    background: url(./assets/svg/themedark.svg) no-repeat;
+    width: 42px;
+    height: 42px;
+    margin-top: 25px;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.dark-icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
+.light-icon {
+    background: url(./assets/svg/themelight.svg) no-repeat;
+    width: 42px;
+    height: 42px;
+    margin-top: 25px;
+    margin-left: 30px;
+    transition: 0.5s;
+}
+
+.light-icon:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+
 .burger {
     display: none;
     flex-direction: column;
@@ -559,7 +585,11 @@ a:hover, a:active {
     margin-left: 60px;
  }
 
+.dark-icon {
+    margin-right: 140px;
+}
 
+.light-icon {margin-right: 140px;}
 
  .nav{
      position: fixed;
@@ -602,7 +632,7 @@ a:hover, a:active {
  }
 
  .lang-switch {
-     margin-left: 515px;
+     margin-left: 448px;
  }
 
  .lang-switch-item-ru {
