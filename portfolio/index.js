@@ -1,3 +1,4 @@
+import i18Obj from './translate.js';
 //бургер-меню
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
