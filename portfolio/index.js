@@ -63,3 +63,16 @@ function changeClassActive(event) {
     event.target.classList.add('button-black-active');
 };
 
+//активен язык
+
+const langSwitch = document.querySelectorAll('.lang');
+langSwitch.forEach(elem => {
+    elem.addEventListener('click', changeLangActive)
+});
+
+function changeLangActive(event) {
+    langSwitch.forEach(el => {
+        el.classList.remove ('lang-active')
+    })
+    event.target.classList.add('lang-active')
+};

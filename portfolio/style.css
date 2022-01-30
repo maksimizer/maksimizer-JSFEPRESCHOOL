@@ -107,13 +107,17 @@ body {
 }
 
 .lang-switch-item-en {
-    padding-left: 36px;
-    padding-right: 9px;
-    color: #BDAE82;
+    margin-left: 36px;
+    margin-right: 9px;
+    color: #FFFFFF;
 }
 
 .lang-switch-item-ru {
-    padding-left: 8px;
+    margin-left: 8px;
+}
+
+.lang-active {
+    color: #bdae82;
 }
 
 .nav-item {
@@ -597,7 +601,7 @@ a:hover, a:active {
  }
 
  .lang-switch-item-ru {
-    padding-left: 15px;
+    margin-left: 15px;
  }
 
  .hero-container {
