@@ -10,7 +10,6 @@
 
 html {
     scroll-behavior: smooth;
-    background-color: black;
 }
 
 * {
@@ -27,7 +26,7 @@ body {
     line-height: 40px;
     color: #FFFFFF;
     overflow-x: hidden;
-
+    background-color: #000;
 }
 
 .section-title{
@@ -97,7 +96,6 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 50px;
-    color: #FFFFFF;  
 }
 
 .lang-switch-item-ru, .lang-switch-item-en {
@@ -217,6 +215,7 @@ body {
     padding-left: 80px;
     padding-right: 0;
     padding-top: 160px;
+    color: #FFFFFF;
 
 }
 
@@ -406,7 +405,6 @@ h3 {
     font-weight: bold;
     font-size: 28px;
     line-height: 56px;
-    color: #FFFFFF;
     margin-top: 41px;
     margin-bottom: 0;
 }
@@ -522,6 +520,7 @@ textarea {
       height: 150px;
       align-items: center;
       line-height: 50px;
+      background-color: #000;
 }
 
 a {

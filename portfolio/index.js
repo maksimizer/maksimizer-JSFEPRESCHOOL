@@ -96,6 +96,8 @@ function getTranslate(lang) {
 });
 }; 
 
+//корректировка позиционирования заголовка Contacts при русском переводе
+
 const contactsTitle = document.getElementById('contacts');
 langRu.addEventListener('click', (changeContactsStyleRu) => {
     contactsTitle.classList.add ('contacts-ru');
@@ -103,3 +105,17 @@ langRu.addEventListener('click', (changeContactsStyleRu) => {
 langEn.addEventListener('click', (changeContactsStyleEn) => {
     contactsTitle.classList.remove ('contacts-ru');
 });
+
+//смена темы
+
+const themeChangeElements = ['.body', '.section-title'];
+const themeIcon = document.querySelector('.dark-icon');
+
+themeIcon.addEventListener('click', changeThemeIcon); //смена иконки темы между темной и светлой
+function changeThemeIcon() {
+  themeIcon.classList.toggle('light-icon');
+};
+
+
+
+
