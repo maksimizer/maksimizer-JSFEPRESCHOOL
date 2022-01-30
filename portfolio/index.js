@@ -64,7 +64,7 @@ function changeClassActive(event) {
     event.target.classList.add('button-black-active');
 };
 
-//активен язык
+//изменение цвета шрифта активного языка
 
 const langSwitch = document.querySelectorAll('.lang');
 langSwitch.forEach(elem => {
@@ -77,3 +77,5 @@ function changeLangActive(event) {
     })
     event.target.classList.add('lang-active')
 };
+
+//перевод страницы
