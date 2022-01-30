@@ -134,7 +134,7 @@ body {
 }
 
 .dark-icon {
-    background: url(./assets/svg/themedark.svg) no-repeatgi;
+    background: url(./assets/svg/themedark.svg) no-repeat;
     width: 42px;
     height: 42px;
     margin-top: 25px;
@@ -562,11 +562,6 @@ a:hover, a:active {
 .light-theme {
     background-color: #FFFFFF;
     color: #000000;
-}
-
-.light-theme:hover {
-    color: #FFFFFF;
-    background-color: #bdae82;
 }
 
 @media (max-width: 768px) {
