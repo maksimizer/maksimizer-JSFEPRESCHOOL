@@ -79,3 +79,22 @@ function changeLangActive(event) {
 };
 
 //перевод страницы
+
+const langEn = document.querySelector('.lang-switch-item-en');
+const langRu = document.querySelector('.lang-switch-item-ru');
+langEn.addEventListener('click', () => getTranslate('en'));
+langRu.addEventListener('click', () => getTranslate('ru'));
+
+function getTranslate(lang) {
+    let dataLangSet = document.querySelectorAll('[data-i18n]');
+    dataLangSet.forEach((item) => {
+        item.textContent = i18Obj[lang][item.dataset.i18n];
+    if (item.placeholder) {
+        item.placeholder = i18Obj[lang][item.dataset.i18n];
+        item.textContent = "";
+    };
+});
+}; 
+
+
+
