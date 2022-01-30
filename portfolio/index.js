@@ -108,14 +108,17 @@ langEn.addEventListener('click', (changeContactsStyleEn) => {
 
 //смена темы
 
-const themeChangeElements = ['.body', '.section-title'];
+const sectionTitles = document.querySelectorAll('.section-title');
+const sectionTitleWrappers = document.querySelectorAll('.title-wrapper');
 const themeIcon = document.querySelector('.dark-icon');
 
-themeIcon.addEventListener('click', changeThemeIcon); //смена иконки темы между темной и светлой
-function changeThemeIcon() {
+themeIcon.addEventListener('click', changeTheme); //смена иконки темы между темной и светлой
+function changeTheme() {
   themeIcon.classList.toggle('light-icon');
-};
-
-
-
+  document.body.classList.toggle('light-theme');
+  sectionTitles.forEach(element => element.classList.toggle('light-theme'));
+  sectionTitleWrappers.forEach(element => element.classList.toggle('light'));
+  
+  //остались кнопки, наивгация в мобильнйо версии и линии бургера
+}
 
