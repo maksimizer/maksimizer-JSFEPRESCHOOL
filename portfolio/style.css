@@ -30,7 +30,6 @@ body {
 
 }
 
-
 .section-title{
     font-family: Merriweather;
     font-style: normal;
@@ -135,7 +134,7 @@ body {
 }
 
 .dark-icon {
-    background: url(./assets/svg/themedark.svg) no-repeat;
+    background: url(./assets/svg/themedark.svg) no-repeatgi;
     width: 42px;
     height: 42px;
     margin-top: 25px;
@@ -558,6 +557,16 @@ a:hover, a:active {
 
 .course-link {
     padding-left: 17px;
+}
+
+.light-theme {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.light-theme:hover {
+    color: #FFFFFF;
+    background-color: #bdae82;
 }
 
 @media (max-width: 768px) {
