@@ -434,10 +434,15 @@ h3 {
     margin-top: 100px;
 }
 
-#contacts {
+
+.contacts {
     background-color: transparent;
     padding-top: 60px;
     padding-right: 224px;
+}
+
+.contacts-ru {
+    padding-right: 20px;
 }
 
 .contacts-section {

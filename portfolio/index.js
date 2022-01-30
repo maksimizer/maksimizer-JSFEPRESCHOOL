@@ -96,5 +96,10 @@ function getTranslate(lang) {
 });
 }; 
 
-
-
+const contactsTitle = document.getElementById('contacts');
+langRu.addEventListener('click', (changeContactsStyleRu) => {
+    contactsTitle.classList.add ('contacts-ru');
+});
+langEn.addEventListener('click', (changeContactsStyleEn) => {
+    contactsTitle.classList.remove ('contacts-ru');
+});
