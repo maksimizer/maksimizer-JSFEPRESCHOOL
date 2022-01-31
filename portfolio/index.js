@@ -111,6 +111,7 @@ langEn.addEventListener('click', (changeContactsStyleEn) => {
 const sectionTitles = document.querySelectorAll('.section-title');
 const sectionTitleWrappers = document.querySelectorAll('.title-wrapper');
 const themeIcon = document.querySelector('.dark-icon');
+const navLinks = document.querySelectorAll('.nav-link');
 
 themeIcon.addEventListener('click', changeTheme); //смена иконки темы между темной и светлой
 function changeTheme() {
@@ -120,6 +121,9 @@ function changeTheme() {
   sectionTitleWrappers.forEach(element => element.classList.toggle('light'));
   buttonsBlack.forEach(element => element.classList.toggle('button-black-light'));
   nav.classList.toggle('nav-open-light');
+  navLinks.forEach(element => element.classList.toggle('nav-link-light'));
+
+  
   
 }
 

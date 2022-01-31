@@ -650,6 +650,11 @@ a:hover, a:active {
     color: #000;
 }
 
+.nav-link-light {
+    color: #000;
+    font-size: 22px;
+}
+
 .nav-list {
     flex-direction: column;
     padding-top: 125px;
