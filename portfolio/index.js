@@ -121,9 +121,15 @@ function changeTheme() {
   sectionTitleWrappers.forEach(element => element.classList.toggle('light'));
   buttonsBlack.forEach(element => element.classList.toggle('button-black-light'));
   nav.classList.toggle('nav-open-light');
-  navLinks.forEach(element => element.classList.toggle('nav-link-light'));
-
-  
-  
+  navLinks.forEach(element => element.classList.toggle('nav-link-light'));  
 }
+
+const burgerLines = document.querySelectorAll('.burger-line');
+burger.addEventListener('click', lightBurger);
+function lightBurger() {
+    if (themeIcon.classList.contains('light-icon')) {
+       burgerLines.forEach(element => element.classList.toggle('burger-line-light'));
+    };
+};
+navLinks.forEach(element => element.addEventListener('click', lightBurger));
 

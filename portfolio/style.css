@@ -174,14 +174,11 @@ body {
 .burger-line {
     width: 80%;
     height: 2px;
-    background-color: #FFFFFF;
+    background-color: #bdae82;
     margin: 3px 0;
     transition: all 0.5s ease-in-out;
 }
 
-.burger-line-light {
-    background-color: #000;
-}
 
 .burger.open .burger-line-1 {
     transform: rotate(-45deg) translate(-5px, 5px);
@@ -193,6 +190,10 @@ body {
 
 .burger.open .burger-line-3 {
     transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.burger-line-light {
+    background-color: #000;
 }
 
 .hero-container {
