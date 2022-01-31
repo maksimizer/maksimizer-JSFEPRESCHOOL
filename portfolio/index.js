@@ -118,7 +118,8 @@ function changeTheme() {
   document.body.classList.toggle('light-theme');
   sectionTitles.forEach(element => element.classList.toggle('light-theme'));
   sectionTitleWrappers.forEach(element => element.classList.toggle('light'));
+  buttonsBlack.forEach(element => element.classList.toggle('button-black-light'));
+  nav.classList.toggle('nav-open-light');
   
-  //остались кнопки, наивгация в мобильнйо версии и линии бургера
 }
 

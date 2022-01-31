@@ -179,6 +179,10 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
+.burger-line-light {
+    background-color: #000;
+}
+
 .burger.open .burger-line-1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
@@ -335,6 +339,16 @@ figcaption {
 
 .button-black:hover {
     color: #FFFFFF;
+}
+
+.button-black-light {
+    background-color: #fff;
+    color: #000;
+}
+
+.button-black-light:hover {
+    background-color: #bdae82;
+    color: #fff;
 }
 
 .button-black-active {
@@ -619,7 +633,6 @@ a:hover, a:active {
      margin-left: auto;
 }
 
-
 .nav-open {
     position: fixed;
     top: 0;
@@ -630,6 +643,11 @@ a:hover, a:active {
     transition: 0.5s;
     z-index: 2;
     margin-left: auto;
+}
+
+.nav-open-light {
+    background-color: #fff;
+    color: #000;
 }
 
 .nav-list {
