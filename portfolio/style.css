@@ -29,6 +29,16 @@ body {
     background-color: #000;
 }
 
+.button:hover{
+	box-shadow: 0 0.5em 0.5em -0.4em #bdae82;
+	transform: translatey(-0.45em);
+}
+
+.button-black:focus{
+    box-shadow: 0 0.5em 0.5em -0.4em #bdae82;
+	transform: translatey(-0.45em);
+}
+
 .section-title{
     font-family: Merriweather;
     font-style: normal;

@@ -1,5 +1,6 @@
 import i18Obj from './translate.js';
 //бургер-меню
+
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 
@@ -113,7 +114,7 @@ const sectionTitleWrappers = document.querySelectorAll('.title-wrapper');
 const themeIcon = document.querySelector('.dark-icon');
 const navLinks = document.querySelectorAll('.nav-link');
 
-themeIcon.addEventListener('click', changeTheme); //смена иконки темы между темной и светлой
+themeIcon.addEventListener('click', changeTheme); 
 function changeTheme() {
   themeIcon.classList.toggle('light-icon');
   document.body.classList.toggle('light-theme');
