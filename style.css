@@ -92,3 +92,45 @@ main {
     transform: scale(1.1);
 }
 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-date {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.github {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.github:hover {
+    color: #bdae82;
+    transform: scale(1.1);
+}
+
+.course-link {
+    display: inline-block;
+    background-image: url(./assets/svg/rss.svg);
+    width: 80px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.course-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transform: scale(1.1);
+}
