@@ -34,6 +34,7 @@ header, footer {
 
 .nav-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     list-style: none;
     column-gap: 40px;
@@ -52,6 +53,7 @@ header, footer {
 
 .bird-icon:hover {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transform: scale(1.1);
 }
 
 .nav-item {
@@ -61,5 +63,32 @@ header, footer {
 
 .nav-item:hover {
     color: #bdae82;
+    transform: scale(1.1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./assets/img/forest.jpg);
+    width: 100%;
+    height: calc(100vh - 140px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.play-button {
+    background-image: url(./assets/svg/play.svg);
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+}
+
+.play-button:hover {
+    filter: brightness(0.7);
+    transform: scale(1.1);
 }
 
