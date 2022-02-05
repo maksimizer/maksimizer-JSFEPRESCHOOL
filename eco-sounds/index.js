@@ -34,3 +34,15 @@ function changeBirdActive(event) {
 };
 
 
+const main = document.querySelector('.main');
+
+birds.forEach(element => {
+    element.addEventListener('click', changeBird)
+});
+
+function changeBird(event) {
+    const dataSet = event.target.dataset.bird;
+    main.style.backgroundImage = `url(./assets/img/${dataSet}.jpg)`;
+    currentAudio = `./assets/audio/${dataSet}.mp3`;
+
+};
