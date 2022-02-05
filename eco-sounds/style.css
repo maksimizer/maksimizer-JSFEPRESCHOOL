@@ -110,6 +110,7 @@ header, footer {
 
 .footer-date {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     column-gap: 40px;
