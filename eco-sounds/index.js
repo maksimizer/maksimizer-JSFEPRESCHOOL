@@ -44,5 +44,11 @@ function changeBird(event) {
     const dataSet = event.target.dataset.bird;
     main.style.backgroundImage = `url(./assets/img/${dataSet}.jpg)`;
     currentAudio = `./assets/audio/${dataSet}.mp3`;
+    if (isPlay ==true) {
+        audio.src = currentAudio;
+        audio.currentTime = 0;
+        audio.play();
+    }
 
 };
+
