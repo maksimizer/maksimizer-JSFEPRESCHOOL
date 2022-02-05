@@ -56,7 +56,7 @@ header, footer {
     transform: scale(1.1);
 }
 
-.bird-icon.active {
+.nav-item.active {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
