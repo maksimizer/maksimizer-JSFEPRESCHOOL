@@ -4,7 +4,7 @@ const audio = new Audio();
 let currentAudio = './assets/audio/forest.mp3';
 const playButton = document.querySelector('.play-button');
 
-//  play/pause
+//  play/pause by clicking play button
 playButton.addEventListener('click', playAudio);
 function playAudio() {
     if (isPlay == false) {
@@ -21,7 +21,7 @@ function playAudio() {
 };
 
 
-
+// highlite active bird
 const birds = document.querySelectorAll('.nav-item');
 birds.forEach(element => {
     element.addEventListener('click', changeBirdActive)});
@@ -33,7 +33,7 @@ function changeBirdActive(event) {
     event.target.classList.add('active');
 };
 
-
+// change background image and audio by clicking bird namegit
 const main = document.querySelector('.main');
 
 birds.forEach(element => {
@@ -49,6 +49,5 @@ function changeBird(event) {
         audio.currentTime = 0;
         audio.play();
     }
-
 };
 
