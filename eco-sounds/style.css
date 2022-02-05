@@ -96,6 +96,10 @@ main {
     transform: scale(1.1);
 }
 
+.pause {
+    background-image: url(./assets/svg/pause.svg);
+}
+
 .footer-container {
     display: flex;
     flex-direction: row;
