@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #000;
+    font-family: 'Rowdies', cursive;
+    color: #fff;
+    scroll-behavior: smooth;
+    font-size: 30px;
+}
+
+.container {
+    padding: 10px 20px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    height: calc(100vh - 115px);
+    text-align: center;
+}
+
+.author {
+    font-size: 20px;
+}
+
+.language-switch {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+    column-gap: 10px;
+}
+
+.lang-button {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lang-button:hover {
+    color: #bdae82;
+    transform: scale(1.1)
+}
+
+.active {
+    color: #bdae82;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.github {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.github:hover {
+    color: #bdae82;
+    transform: scale(1.1);
+}
+
+.course-link {
+    display: inline-block;
+    background-image: url(./assets/svg/rss.svg);
+    width: 80px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-img {
+    background-image: url(./assets/img/1.png);
+    width: 30vw;
+    height: 40vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s;
+}
+
+.course-link:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transform: scale(1.1);
+}
+
+.new-quote-button {
+    background-color: #FFF;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: 'Rowdies', cursive;
+    color: #000;
+    font-size: 30px;
+    border-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+    
+}
+
+.new-quote-button:hover{
+    background-color: #bdae82;
+    color: #FFF;
+    transform: scale(1.1);
+}
+
