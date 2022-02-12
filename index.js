@@ -32,8 +32,12 @@ function randomiseDataEn(data) {
 
 //change quote
 newQuoteBtn.addEventListener('click', (event) => {
+    if (currentLang == "en") {
+        getData();
+    } else {
+        getQuotes();
+    };
     randomiseImg();
-    getData();
 })
 
 
@@ -49,7 +53,7 @@ function activateBtn(event) {
      event.target.classList.add('active');
 };
 
-//change lang to En
+//change lang 
 en.addEventListener('click', (event) => {
     currentLang = 'en';
     randomiseImg();
@@ -57,10 +61,24 @@ en.addEventListener('click', (event) => {
     newQuoteBtn.textContent = "New cool quote!"
 });
 
-
-//change lang to By
 by.addEventListener('click', (event) => {
     currentLang = 'by';
     randomiseImg();
+    getQuotes();
     newQuoteBtn.textContent = "Пацанская цытата!"
-})
+});
+
+// by qoutes
+
+async function getQuotes() {
+    const quotes = "./data.json";
+    const res = await fetch(quotes);
+    const data = await res.json();
+    showDataBy(data);
+  }
+  
+  function showDataBy(data) {
+        let randomBy = Math.ceil(Math.random() * data.length);
+        quote.textContent = '"' + data[randomBy].text + '"';
+        author.textContent = '© ' + data[randomBy].author + ' (не Джэйсан Стэйтам!)';
+};
