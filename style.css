@@ -96,8 +96,8 @@ html {
 
 .main-img {
     background-image: url(./assets/img/1.png);
-    width: 50vw;
-    height: 50vh;
+    width: 30vw;
+    height: 40vh;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
