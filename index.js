@@ -82,3 +82,11 @@ async function getQuotes() {
         quote.textContent = '"' + data[randomBy].text + '"';
         author.textContent = '© ' + data[randomBy].author + ' (не Джэйсан Стэйтам!)';
 };
+
+
+//set local storage
+function setLocalStorage() {
+    localStorage.setItem('currentLang', currentLang);
+  }
+  window.addEventListener('beforeunload', setLocalStorage)
+
