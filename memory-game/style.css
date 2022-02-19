@@ -1,13 +1,16 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0 auto;   
+    margin: 0;   
 }
 
 body {
-    max-width: 1440px;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: auto;
+    height: 100vh;
     background-color: #000000;
 }
 
@@ -57,3 +60,45 @@ body {
 }
 
 
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.footer-date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 40px;
+    color: #fff;
+}
+
+.github {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.github:hover {
+   transform: scale(1.1);
+}
+
+.course-link {
+    display: inline-block;
+    background-image: url(/maksimizer-JSFEPRESCHOOL/memory-game/assets/svg/rss.svg);
+    width: 80px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.course-link:hover {
+    transform: scale(1.1);
+}
