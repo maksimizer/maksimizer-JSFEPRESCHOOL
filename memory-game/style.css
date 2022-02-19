@@ -11,7 +11,7 @@ body {
     max-width: 1440px;
     margin: auto;
     height: 100vh;
-    background-color: #000000;
+    background-color: #4d7a7a;
 }
 
 .game-container {
@@ -33,7 +33,7 @@ body {
     cursor: pointer;
     transform: scale(1);
     transform-style: preserve-3d;
-    transition: all .5s;
+    transition: all .5s;  
 }
 
 .card.flip {
@@ -69,6 +69,7 @@ body {
 }
 
 .footer-date {
+    font-size: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
