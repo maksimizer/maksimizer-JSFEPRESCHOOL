@@ -4,6 +4,8 @@ let hasFlippedCard = false;
 let firstCard; 
 let secondCard;
 let lockBoard = false;
+let moveCount = 0;
+let winMovesCount =0;
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -30,6 +32,8 @@ function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     resetBoard();
+    moveCount ++;
+    winMovesCount ++;
 };
 
 function unflipCards() {
@@ -37,7 +41,8 @@ function unflipCards() {
         firstCard.classList.remove('flip');
         secondCard.classList.remove('flip');
         resetBoard();
-    }, 1500);
+    }, 1000);
+    moveCount ++;
 }; 
 
 function resetBoard() {
@@ -55,6 +60,17 @@ function shuffle() {
 };
 
 shuffle();
+
+//check for win
+function checkForWin() {
+    if (winMovesCount === 6) {
+        setTimeout(() => {
+            document.querySelector('.game-container').textContent = `Вы справились за ${moveCount} ходов! Примите мои поздравлния! Если хотите начать новую игру, нажмите клавишу F5.`;
+        }, 1000);
+    };
+};
+
+cards.forEach(card => card.addEventListener('click', checkForWin));
 
 
 

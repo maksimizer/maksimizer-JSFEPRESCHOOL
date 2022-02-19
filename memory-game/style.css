@@ -19,10 +19,13 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin: auto;
     width: 665px;
     height: 500px;
-    perspective: 1000px;    
+    perspective: 1000px; 
+    color: #fff;
+    font-size: 30px;
 }
 
 .card {
@@ -103,3 +106,4 @@ body {
 .course-link:hover {
     transform: scale(1.1);
 }
+
