@@ -14,7 +14,7 @@ body {
     background-color: #4d7a7a;
 }
 
-.score {
+.win {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -39,12 +39,17 @@ body {
     border-style: none;
     transition: 0.3s;
     cursor: pointer;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .new-game:active {
     transform: scale(0.97);
     transition: transform .2s;
+}
+
+.score {
+    margin-top: 10px;
+    list-style: none;
 }
 
 .game-container {

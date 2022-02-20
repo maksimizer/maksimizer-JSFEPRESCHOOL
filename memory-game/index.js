@@ -7,7 +7,7 @@ let lockBoard = false;
 let moveCount = 0;
 let winMovesCount =0;
 const gameContainer = document.querySelector('.game-container');
-const score = document.querySelector('.score'); 
+const win = document.querySelector('.win'); 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -68,7 +68,7 @@ function checkForWin() {
     if (winMovesCount === 6) {
         setTimeout(() => {
             gameContainer.classList.add('hidden');
-            score.classList.remove('hidden');
+            win.classList.remove('hidden');
             document.querySelector('.congrat').textContent = `Congratulations! You made it in ${moveCount} moves.`;
         }, 1000);
     };
