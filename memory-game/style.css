@@ -14,6 +14,39 @@ body {
     background-color: #4d7a7a;
 }
 
+.score {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    width: 665px;
+    height: 500px;
+    perspective: 1000px; 
+    color: #fff;
+    font-size: 30px; 
+}
+
+.new-game {
+    background-color: #31cae6cb;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 30px;
+    border-style: none;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.new-game:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
 .game-container {
     display: flex;
     flex-wrap: wrap;
@@ -26,6 +59,10 @@ body {
     perspective: 1000px; 
     color: #fff;
     font-size: 30px;
+}
+
+.hidden {
+    display: none;
 }
 
 .card {

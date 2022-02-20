@@ -6,6 +6,8 @@ let secondCard;
 let lockBoard = false;
 let moveCount = 0;
 let winMovesCount =0;
+const gameContainer = document.querySelector('.game-container');
+const score = document.querySelector('.score'); 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -65,13 +67,18 @@ shuffle();
 function checkForWin() {
     if (winMovesCount === 6) {
         setTimeout(() => {
-            document.querySelector('.game-container').textContent = `Вы справились за ${moveCount} ходов! Примите мои поздравлния! Если хотите начать новую игру, нажмите клавишу F5.`;
+            gameContainer.classList.add('hidden');
+            score.classList.remove('hidden');
+            document.querySelector('.congrat').textContent = `Congratulations! You made it in ${moveCount} moves.`;
         }, 1000);
     };
 };
 
 cards.forEach(card => card.addEventListener('click', checkForWin));
 
+//new game
+function startNewGame() {
+    document.location.reload();
+}
 
-
-
+document.querySelector('.new-game').addEventListener('click', startNewGame);
