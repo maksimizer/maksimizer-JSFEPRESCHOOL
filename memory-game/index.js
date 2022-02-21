@@ -5,9 +5,19 @@ let firstCard;
 let secondCard;
 let lockBoard = false;
 let moveCount = 0;
-let winMovesCount =0;
+let winMovesCount = 0;
 const gameContainer = document.querySelector('.game-container');
 const win = document.querySelector('.win'); 
+let lastGame = Number(localStorage.getItem('last game'))
+let game = 1 + lastGame;
+resetScore();
+function resetScore() {
+    if (game > 11) {
+        game = 1;
+        localStorage.clear();
+    };
+}
+
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
@@ -82,3 +92,30 @@ function startNewGame() {
 }
 
 document.querySelector('.new-game').addEventListener('click', startNewGame);
+
+//last 10 games score in local storage
+
+
+
+window.addEventListener('beforeunload', setLocalStorage);
+window.addEventListener('load', getLocalStorage);
+
+function setLocalStorage() {
+    if (gameContainer.classList.contains('hidden')) {
+        localStorage.setItem(`Game ${game}`, `Game ${game}: ${moveCount} moves.`); 
+        localStorage.setItem('last game', `${game}`);       
+    };
+    
+};
+
+
+
+const gameScores = document.querySelectorAll('.game-number');
+
+function getLocalStorage() {
+    gameScores.forEach((element, i) => {
+        if (localStorage.getItem(`Game ${i + 1}`) !== null) {
+            element.textContent = localStorage.getItem(`Game ${i+1}`)};
+    });
+};
+
